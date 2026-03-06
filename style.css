@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px;
+  max-width: 80vw;
+  margin: auto;
+  height: 60px;
+}
+nav img {
+  width: 120px;
+  position: relative;
+  z-index: 10;
+}
+nav .nav-btn button {
+  position: relative;
+  z-index: 10;
+}
+
+.main {
+  background-image: url(/images/bg.jpg);
+  background-position: center center;
+  background-size: max(2800px, 100vw);
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.main .box {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+.hero {
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 40px;
+}
+.hero > :first-child {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.hero > :nth-child(2) {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.hero > :nth-child(3) {
+  font-size: 1.25rem;
+}
+.separation {
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 105, 252) 0%,
+    red 50%,
+    rgb(255, 105, 252) 100%
+  );
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  padding: 4px 10px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn-red {
+  background-color: red;
+  border: none;
+  padding: 0.375rem 1.125rem;
+  font-size: 1.625rem;
+}
+.btn-red-sm {
+  background-color: red;
+  border: none;
+}
+#flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#flex input {
+  padding: 0.9375rem 0.625rem;
+  width: 350px;
+  height: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#flex input::placeholder {
+  font-size: 0.875rem;
+  color: rgb(211, 211, 211);
+}
+.trend-movie-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  padding: 30px;
+  max-width: 80vw;
+  margin: auto;
+}
+.movie-img {
+  margin: auto;
+  position: relative;
+  margin-top: 50px;
+  width: 80%;
+  border-radius: 15px;
+  transition: all 0.1s ease;
+}
+.movie-img:hover {
+  transform: scale(1.05);
+}
+.hero-2 {
+  position: relative;
+  background-color: black;
+}
+.hero-2 span {
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.reason-box {
+  background-color: black;
+}
+.reason-box > span {
+  margin-left: 120px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.reason-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+}
+.reason-card {
+  padding: 30px 15px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+  border-radius: 15px;
+}
+.reason-card p {
+  margin-top: 15px;
+  font-size: 0.875rem;
+  color: rgb(211, 211, 211);
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.faq-box {
+  background-color: black;
+}
+.faq-title span {
+  margin-left: 120px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.faq-container {
+  padding: 30px;
+  max-width: 80vw;
+  margin: auto;
+}
+.faq-card {
+  background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  color: white;
+}
+.faq-card > :first-child {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.faq-card > :nth-child(2) {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: rgb(211, 211, 211);
+}
+.faq-card:hover {
+  background: linear-gradient(149deg, #210e17 0%, #192247 99.08%);
+}
+.faq-card:hover > :first-child {
+  color: red;
+}
+.flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.flex-2 input {
+  padding: 0.9375rem 0.625rem;
+  width: 350px;
+  height: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.flex-2 input::placeholder {
+  font-size: 0.875rem;
+  color: rgb(211, 211, 211);
+}
+.footer-box {
+  background-color: black;
+  color: rgb(211, 211, 211);
+  padding: 1.875rem;
+  height: 100vh;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-container {
+  max-width: 80vw;
+  margin: auto;
+  padding: 30px;
+  font-size: 0.9375rem;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.footer-column a {
+  color: rgb(211, 211, 211);
+  text-decoration: underline;
+}
+.flex-2 {
+  margin-block: 40px;
+}
+.flex-2 .input-box {
+  max-width: 80vw;
+}
+@media screen and (max-width: 1100px) {
+  .trend-movie-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reason-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex-2 .input-box input {
+    width: 275px;
+  }.btn-red {
+  background-color: red;
+  border: none;
+  padding: 0.300rem 1rem;
+  font-size: 1.300rem;
+}
+}
+@media screen and (max-width: 650px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .hero > :first-child {
+    font-size: 32px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 16px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+  #flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .flex-2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-2 span {
+    left: 20px;
+  }
+  .reason-box > span {
+    margin-left: 20px;
+  }
+  .trend-movie-card {
+    grid-template-columns: 1fr;
+  }
+  .reason-card-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .flex-2 .input-box input {
+    width: 250px;
+  }
+}
